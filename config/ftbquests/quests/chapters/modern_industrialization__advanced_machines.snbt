@@ -1,0 +1,318 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__advanced_machines"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:crude_oil_bucket"
+	id: "0BE0B386C1318470"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4080F67038142AF0"]
+			disable_toast: true
+			icon: "modern_industrialization:guidebook"
+			id: "3563446339768517"
+			invisible: true
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "6ADC56D60D5E61B0"
+				type: "checkmark"
+			}]
+			title: "Advancing in technology!"
+			x: -0.55d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3563446339768517"]
+			description: ["Spins items &oreally&r fast."]
+			id: "5230438717941B85"
+			tasks: [{
+				id: "117828FC3E011CB7"
+				item: "modern_industrialization:centrifuge"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4021E311068D7A9B"]
+			description: ["Makes elements react to each other resulting in new/different elements."]
+			id: "0BEDEBE2F45425C1"
+			tasks: [{
+				id: "25A01A28AE9C0DD3"
+				item: "modern_industrialization:chemical_reactor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E7354767C017CF6"]
+			description: ["The distillery can turn Crude Oil into Sulfuric Heavy and Light fuel."]
+			icon: "modern_industrialization:distillery"
+			id: "4021E311068D7A9B"
+			tasks: [
+				{
+					id: "7490C62300A1B686"
+					item: "modern_industrialization:distillery"
+					type: "item"
+				}
+				{
+					id: "3EABC4FB7AC53EED"
+					item: "modern_industrialization:sulfuric_light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "653242FE31EF8007"
+					item: "modern_industrialization:sulfuric_heavy_fuel_bucket"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3563446339768517"]
+			description: ["Creates new elements with electricity."]
+			id: "1808B10C497DDBFC"
+			tasks: [{
+				id: "0EA5261C221EC13A"
+				item: "modern_industrialization:electrolyzer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3563446339768517"]
+			id: "793E54725C633B4B"
+			tasks: [{
+				id: "2DE3EC513F3ADAF1"
+				item: "modern_industrialization:configurable_tank"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D5DDFF5F096ED74"]
+			description: [
+				"Produces fluids based on the drill inside."
+				""
+				"Aluminium drills will yield &8Crude Oil&r."
+			]
+			icon: "modern_industrialization:oil_drilling_rig"
+			id: "6E7354767C017CF6"
+			tasks: [
+				{
+					id: "6893C7B2536773E6"
+					item: "modern_industrialization:oil_drilling_rig"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "1160D8607B4808DD"
+					item: "minecraft:chain"
+					type: "item"
+				}
+				{
+					count: 38L
+					id: "41B35FD933931265"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "31F7CF92D4913BF7"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					id: "5FDB7E33221240B1"
+					item: "modern_industrialization:crude_oil_bucket"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D8711C7E1AD05CD"]
+			description: [
+				"You can burn fuel in a Diesel Generator. Alternatively you can also burn them in the Large Steam Boiler for more energy."
+				"Read the MI Guidebook entry for more information."
+			]
+			id: "2404EAB0A8046C4A"
+			tasks: [{
+				id: "30541404BF868B80"
+				item: "modern_industrialization:lv_diesel_generator"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2404EAB0A8046C4A"]
+			id: "12F6909BAFE1CB70"
+			tasks: [
+				{
+					id: "0BC8E7BBE9A480E2"
+					item: "modern_industrialization:mv_diesel_generator"
+					type: "item"
+				}
+				{
+					id: "1EAE230474D42321"
+					item: "modern_industrialization:hv_diesel_generator"
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BEDEBE2F45425C1"]
+			description: ["Make Heavy/Light fuel in the Chemical reactor from Sulfuric fuel and Hydrogen."]
+			icon: "modern_industrialization:heavy_fuel_bucket"
+			id: "29502CE30C89454D"
+			tasks: [
+				{
+					id: "1EAF7FD325D57F51"
+					item: "modern_industrialization:light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "3668B19956ECB825"
+					item: "modern_industrialization:heavy_fuel_bucket"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29502CE30C89454D"]
+			description: [
+				"The Electric mixer unlocks new mixing recipes."
+				"Mixing Heavy and Light fuel creates Diesel."
+			]
+			icon: "modern_industrialization:electric_mixer"
+			id: "3D8711C7E1AD05CD"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oCompleting this quest will unlock 'Advanced Machines'&r"
+			tasks: [
+				{
+					id: "103A86532419AE41"
+					item: "modern_industrialization:electric_mixer"
+					type: "item"
+				}
+				{
+					id: "7400709521C8EF25"
+					item: "modern_industrialization:diesel_bucket"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D8711C7E1AD05CD"]
+			icon: "modern_industrialization:diesel_jetpack"
+			id: "6F94B7A0612A0FB0"
+			tasks: [
+				{
+					id: "12A6CBA203D645A2"
+					item: "modern_industrialization:diesel_jetpack"
+					type: "item"
+				}
+				{
+					id: "0BD16EA360E7A34D"
+					item: {
+						Count: 1b
+						id: "modern_industrialization:rubber_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D2436C6CAF6F843"
+					item: {
+						Count: 1b
+						id: "modern_industrialization:rubber_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3563446339768517"]
+			description: ["An electronic circuit serves as the logic base of many electronic machines."]
+			id: "2D5DDFF5F096ED74"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "261F2D1C47D4F8A8"
+				item: "modern_industrialization:electronic_circuit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D5DDFF5F096ED74"]
+			description: ["Produces &7Steam&r from &9Water&r or &1Heavy Water&r."]
+			id: "1F2C1BF09E4C01FA"
+			tasks: [{
+				id: "6A67CC762D309676"
+				item: "modern_industrialization:advanced_large_steam_boiler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D5DDFF5F096ED74"]
+			description: ["Electric version of the Steam quarry."]
+			id: "457199CF5C06C56E"
+			tasks: [{
+				id: "18BC9A48A4AAEE3B"
+				item: "modern_industrialization:electric_quarry"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D8711C7E1AD05CD"]
+			id: "5AC9FA853F97D3BE"
+			tasks: [{
+				id: "2D0F618EE84C2E63"
+				item: "modern_industrialization:diesel_mining_drill"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D8711C7E1AD05CD"]
+			id: "4297C1CACD6C4391"
+			tasks: [{
+				id: "77A198E2D87DE7B2"
+				item: "modern_industrialization:diesel_chainsaw"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -2.0d
+		}
+	]
+	title: "Modern Industrialization - Oil Processing"
+}

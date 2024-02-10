@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "computers"
+	group: "2585B8801D6154A7"
+	icon: "computercraft:computer_normal"
+	id: "4199F0C1DF23A8E2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19061BA14DBE2FEF"]
+			icon: "computercraft:computer_normal"
+			id: "55538013E869A8B4"
+			shape: "rsquare"
+			size: 1.1d
+			title: "Computers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24380A54ABC7F0F1"]
+			id: "76D3B483475756F2"
+			tasks: [{
+				id: "627DA2EEF21B7731"
+				item: "computercraft:computer_advanced"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55538013E869A8B4"]
+			id: "3F19EE1D57E6C29A"
+			tasks: [{
+				id: "57C08D0DB453AF2D"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55538013E869A8B4"]
+			id: "24380A54ABC7F0F1"
+			tasks: [{
+				id: "77A01F8DFD418601"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F19EE1D57E6C29A"]
+			id: "6C320D2704EBAE52"
+			tasks: [{
+				id: "50FA1409672EE9CE"
+				item: "computercraft:turtle_advanced"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+	]
+	title: "Computers"
+}

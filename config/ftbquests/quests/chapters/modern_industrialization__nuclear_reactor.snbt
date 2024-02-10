@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__nuclear_reactor"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:nuclear_reactor"
+	id: "0038AAC25B710EC1"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["695CE42A676412B4"]
+			description: [
+				"The next questline is explained in details inside the MI Guidebook! You can collect one here. Read the entry talking about the Nuclear Reactor. This questline serves as a vague guide for the chapter."
+				""
+				" &oThis questline is WIP&r"
+			]
+			disable_toast: true
+			hide: true
+			icon: "modern_industrialization:nuclear_casing"
+			id: "08BC67564982989A"
+			rewards: [{
+				auto: "disabled"
+				id: "05E4FB8A151D85EF"
+				item: "modern_industrialization:guidebook"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "2BEC45F213B58530"
+				type: "checkmark"
+			}]
+			title: "Nuclear Energy"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["246A8F60D5CBB408"]
+			description: [
+				"Use your wrench to project the multiblock!"
+				""
+				"The reactor cannot destroy terrain. It can void items inside it if you aren't careful."
+				""
+				"The nuclear reactor produces elements as a side effect that will be important later on."
+			]
+			icon: "modern_industrialization:nuclear_reactor"
+			id: "735177567AA4677B"
+			rewards: [{
+				count: 2
+				id: "46C3E63ADDA5DF46"
+				item: "modern_industrialization:uranium_fuel_rod"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oCompleting this unlocks the MI Endgame questline&r"
+			tasks: [
+				{
+					id: "6145804082DCCE95"
+					item: "modern_industrialization:nuclear_reactor"
+					type: "item"
+				}
+				{
+					id: "54A5646B8982FB13"
+					item: "modern_industrialization:nuclear_item_hatch"
+					type: "item"
+				}
+				{
+					id: "7C1E4E9ACE410290"
+					item: "modern_industrialization:nuclear_fluid_hatch"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08BC67564982989A"]
+			description: ["Basic components of a nuclear reactor. You might need 'some' of these."]
+			icon: "modern_industrialization:nuclear_alloy_plate"
+			id: "246A8F60D5CBB408"
+			tasks: [
+				{
+					id: "09795CCED96D60AB"
+					item: "modern_industrialization:nuclear_alloy_plate"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2383B2F6567CBCD4"
+					item: "modern_industrialization:cadmium_control_rod"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "728ECDB06C334136"
+					item: "modern_industrialization:processing_unit"
+					type: "item"
+				}
+				{
+					id: "49E0D96AFB9D369C"
+					item: "modern_industrialization:uranium_fuel_rod"
+					type: "item"
+				}
+			]
+			title: "Components"
+			x: -5.0d
+			y: 0.0d
+		}
+	]
+	title: "Modern Industrialization - Nuclear Reactor"
+}

@@ -1,0 +1,79 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae2__crafting"
+	group: "2585B8801D6154A7"
+	icon: "ae2:64k_crafting_storage"
+	id: "792F1C0D252C41A0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7C3020BFBFF10B55"]
+			icon: "ae2:pattern_provider"
+			id: "23CAE628D1BDE65D"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "61B3B420348EC9E5"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "7ADC68D27C23400B"
+					item: "ae2:crafting_pattern"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23CAE628D1BDE65D"]
+			icon: "ae2:1k_crafting_storage"
+			id: "50B5FC3A1C6E9AB0"
+			tasks: [
+				{
+					id: "47293AE60DC6CBFB"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "0DD801240A9BC4C5"
+					item: "ae2:4k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "0C1C290D0DAE7959"
+					item: "ae2:16k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "0BD1BD8E69C63979"
+					item: "ae2:64k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "02B12876E46D2F8C"
+					item: "ae2:256k_crafting_storage"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23CAE628D1BDE65D"]
+			id: "07C7AE164ED45242"
+			tasks: [{
+				id: "5F5117B3B7172777"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "AE2 - Crafting"
+}

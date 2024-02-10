@@ -1,0 +1,312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_endgame"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:singularity"
+	id: "656788D13EC8646B"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"735177567AA4677B"
+				"5E966BD374AE3C16"
+			]
+			description: ["The limits of human physics..."]
+			id: "64456425FD1F91BF"
+			tasks: [{
+				id: "5AC9D12ACA71F74C"
+				item: "modern_industrialization:singularity"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0F2EECE70436D15E"]
+			description: ["This masterpiece gives you flight if charged. Sadly it has no way to protect you from damage."]
+			id: "39EC3F90A0FE090A"
+			tasks: [{
+				id: "74C9338BC2079E0F"
+				item: "modern_industrialization:gravichestplate"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3887245CA0BED6E3"]
+			description: ["The highest tier upgrade for your machines. Also used for crafting recipes."]
+			id: "160BD45EA35BD803"
+			tasks: [{
+				id: "1ABF359F18B76C12"
+				item: "modern_industrialization:quantum_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["160BD45EA35BD803"]
+			description: ["Does infinite damage to most mobs. "]
+			id: "6CC7332811DEE7C8"
+			tasks: [{
+				id: "2E5B652AC46FE054"
+				item: "modern_industrialization:quantum_sword"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["160BD45EA35BD803"]
+			description: ["Every piece of this armor grants a 25% chance of evading damage. You do the math:)"]
+			icon: "modern_industrialization:quantum_chestplate"
+			id: "013F3DAD7DB13F85"
+			tasks: [
+				{
+					id: "5DB3C034CA2B800A"
+					item: "modern_industrialization:quantum_helmet"
+					type: "item"
+				}
+				{
+					id: "1A1AF7D44C8A12C4"
+					item: "modern_industrialization:quantum_chestplate"
+					type: "item"
+				}
+				{
+					id: "26AE9718875CC336"
+					item: "modern_industrialization:quantum_leggings"
+					type: "item"
+				}
+				{
+					id: "257F840A0D62C938"
+					item: "modern_industrialization:quantum_boots"
+					type: "item"
+				}
+			]
+			title: "Quantum Armor"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1370B8811B42FC68"
+				"160BD45EA35BD803"
+			]
+			description: ["Using UU Matter in a replicator can recreate almost all items."]
+			id: "5374764668EE1CEC"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "&oUnlocks the ItemAlchemy questline&r"
+			tasks: [{
+				id: "34C2DE1B8BAA9020"
+				item: "modern_industrialization:replicator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3887245CA0BED6E3"]
+			description: ["Electrolyzing singularities results in a few drops of UU Matter."]
+			id: "1370B8811B42FC68"
+			tasks: [{
+				id: "5AB9476D788C2EC6"
+				item: "modern_industrialization:uu_matter_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"735177567AA4677B"
+				"07104A5BE622AECF"
+			]
+			id: "5C1259D6CAF8AF68"
+			tasks: [{
+				id: "3FC59BD81607171C"
+				item: "modern_industrialization:mixed_ingot_iridium"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5C1259D6CAF8AF68"]
+			icon: "modern_industrialization:iridium_plate"
+			id: "13A46A1E207E66FE"
+			tasks: [
+				{
+					id: "727DEAC7FBFB5F33"
+					item: "modern_industrialization:industrial_tnt"
+					type: "item"
+				}
+				{
+					id: "06EECA804EE1AF0E"
+					item: "modern_industrialization:iridium_plate"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["13A46A1E207E66FE"]
+			description: ["No, you cannot blow up nukes :("]
+			icon: "modern_industrialization:ultradense_metal_ball"
+			id: "5E966BD374AE3C16"
+			tasks: [
+				{
+					id: "367E6C24606BE9C0"
+					item: "modern_industrialization:ultradense_metal_ball"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "147DF18E01000FF3"
+					item: "modern_industrialization:nuke"
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0F2EECE70436D15E"]
+			id: "0E1D126216C8D5E7"
+			tasks: [{
+				id: "6026FC815640F6CD"
+				item: "modern_industrialization:superconductor_cable"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["13A46A1E207E66FE"]
+			id: "0F2EECE70436D15E"
+			tasks: [{
+				id: "37C4460BFD0C15E1"
+				item: "modern_industrialization:superconductor_ingot"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["64456425FD1F91BF"]
+			id: "3887245CA0BED6E3"
+			tasks: [{
+				id: "2C42624555CA71AE"
+				item: "modern_industrialization:quantum_circuit"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"0F2EECE70436D15E"
+				"3887245CA0BED6E3"
+			]
+			description: ["The Fusion Reactor can produce Helium plasma. The Plasma Turbine creates electricity from Helium plasma."]
+			id: "5ED5B126AE4A6EA5"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4CBCEEE5FD0CAC2F"
+					item: "modern_industrialization:fusion_reactor"
+					type: "item"
+				}
+				{
+					id: "1BF50254B1417347"
+					item: "modern_industrialization:plasma_turbine"
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["735177567AA4677B"]
+			disable_toast: true
+			icon: "modern_industrialization:singularity"
+			id: "07104A5BE622AECF"
+			invisible: true
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "0F4803589A20719B"
+				type: "checkmark"
+			}]
+			title: "The Engame"
+			x: -18.150000000000002d
+			y: -5.5d
+		}
+		{
+			dependencies: ["39EC3F90A0FE090A"]
+			description: ["The Jet Suit gives you flight while also acts as a spacesuit."]
+			icon: {
+				Count: 1b
+				id: "ad_astra:jet_suit"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "771CB3B29B4C4326"
+			tasks: [
+				{
+					id: "065D6819CCD13BB3"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71092F99CAA6BA47"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53E0FC9BEC4E2E2B"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61540FA966DCA1AF"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: -9.5d
+		}
+	]
+	title: "Modern Industrialization - The Endgame"
+}

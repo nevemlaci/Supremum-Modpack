@@ -1,0 +1,279 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__1"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:bronze_boiler"
+	id: "522A99A1970778C4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5686691354A0E1B7"]
+			description: ["Modern Industrialization is the core technology mod for this pack. Quests will mostly guide you trough the mod but the &6MI Guidebook&r is a useful item if you need more help."]
+			disable_toast: true
+			hide: true
+			icon: "modern_industrialization:forge_hammer"
+			id: "0FF03C6BFC1F6FA3"
+			rewards: [{
+				id: "029B4BF920A1AF0B"
+				item: "modern_industrialization:guidebook"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "75B01F9B09DB5894"
+				type: "checkmark"
+			}]
+			title: "Modern Industrialization "
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FF03C6BFC1F6FA3"]
+			icon: "modern_industrialization:bronze_ingot"
+			id: "3550F3F999A7CD7F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2940730F310FF765"
+				table_id: 804487587152177967L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					count: 60L
+					id: "24F1C7CBBD2F8B5A"
+					item: "modern_industrialization:copper_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "13DFA720BA85B347"
+					item: "modern_industrialization:tin_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "30E65D09F8227595"
+					item: "modern_industrialization:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "The Bronze Age"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3550F3F999A7CD7F"]
+			description: ["The bronze boiler can be used to turn &9water&r into &7steam&r. This is your second form of power(after rotational). Most early game machines will accept steam instead of electricity."]
+			id: "13AA96E9136A9483"
+			rewards: [
+				{
+					count: 2
+					id: "4EF5F2A44CE094ED"
+					item: "minecraft:bucket"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1B2BE74E011D3009"
+					item: "modern_industrialization:fluid_pipe"
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oCompleting this quest unlocks 'Multiblock Madness'"
+			tasks: [{
+				id: "15272E48F7693F61"
+				item: "modern_industrialization:bronze_boiler"
+				type: "item"
+			}]
+			title: "Your first boiler"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: ["Turns materials into dust."]
+			id: "1EA85F9BFE320E96"
+			rewards: [{
+				count: 4
+				id: "639F60EDA2B39164"
+				item: "modern_industrialization:iron_dust"
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "1791799A43A88014"
+				item: "modern_industrialization:bronze_macerator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: ["The mixer helps you automate some shapeless recipes and dust mixing."]
+			id: "5E4AF2D3396E62A3"
+			rewards: [{
+				count: 8
+				id: "44B92DF86D5C3931"
+				item: "modern_industrialization:bronze_dust"
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E53C022FE09FFD9"
+				item: "modern_industrialization:bronze_mixer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			id: "4BCF5CDA1F9BFE3C"
+			rewards: [{
+				count: 16
+				id: "0E7B2313BFC09D1A"
+				item: "modern_industrialization:bronze_plate"
+				random_bonus: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "32602103768230AE"
+				item: "modern_industrialization:bronze_compressor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: ["Makes planks, slabs, stairs, etc."]
+			id: "321382DCC0E8DF7E"
+			rewards: [{
+				count: 48
+				id: "6393A8440B096C37"
+				item: "minecraft:oak_planks"
+				random_bonus: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "449803EF20D352A3"
+				item: "modern_industrialization:bronze_cutting_machine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: ["A furnace running on steam instead of coal."]
+			id: "5C883AE223576897"
+			rewards: [{
+				id: "3EC5B5D10152D19E"
+				item: "modern_industrialization:steam_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0062EF5B8FC2AD36"
+				item: "modern_industrialization:bronze_furnace"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3550F3F999A7CD7F"]
+			description: [
+				"The &ewrench&r is used to customize machine input/output and rotation. It also helps when building multiblocks: hover over the controller of the multiblock and it will show you the hologram of the machine."
+				""
+				"The &ewrench&r also has JEI entries for all multiblocks. Check the &eWrench&r tab of a multiblock to see the resources needed!"
+				""
+				"{@pagebreak}"
+				""
+				"Some multiblocks have different shapes. Right-clicking on a multiblock controller will bring up a GUI where you can change the shape/size of the multiblock."
+			]
+			id: "2D15E7687A4E5EC8"
+			rewards: [{
+				count: 24
+				id: "20EA96F1A8C2DAED"
+				item: "minecraft:torch"
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D3CC0D58E242FD3"
+				item: "modern_industrialization:wrench"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: ["Pumps water from water source blocks. Great way to fuel your boiler."]
+			id: "28D515C053DA1B89"
+			rewards: [{
+				id: "0EFF652B35471E78"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67DD285C36AAFC02"
+				item: "modern_industrialization:bronze_water_pump"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			description: [
+				"Mines a 3x3 area. You can enable/disable silk touch mode with shift-rightclick."
+				"Input fuel with rightclick in your inventory."
+			]
+			id: "7889A83F84E4B0D8"
+			rewards: [{
+				count: 32
+				id: "0246BB76D0E4BBB9"
+				item: "minecraft:coal"
+				random_bonus: 32
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D4B0FC7A53162E5"
+				item: "modern_industrialization:steam_mining_drill"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3550F3F999A7CD7F"]
+			id: "7F13F6D85596FED4"
+			rewards: [{
+				count: 16
+				id: "6230E33FA74B8E0F"
+				item: "minecraft:glass"
+				random_bonus: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E9AABC96023BCA9"
+				item: "modern_industrialization:fluid_pipe"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+	]
+	title: "Modern Industrialization - Steaming fast"
+}

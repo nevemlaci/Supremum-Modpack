@@ -1,0 +1,307 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro1"
+	group: "6E7C085B9B79161B"
+	icon: "minecraft:crafting_table"
+	id: "48607DBFCC2E1582"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &o&eModSupremum!&r&r This modpack was made to introduce newer modded players into technology mods so they can get a feeling about automation."
+				"{@pagebreak}"
+				"Feel free to play as you like but keep in mind that custom recipes usually gate better items behind the starting mods."
+			]
+			disable_toast: true
+			icon: "minecraft:grass_block"
+			id: "65A0A91B61A39932"
+			rewards: [
+				{
+					count: 4
+					id: "768436280FED39A8"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "3D0D79281F0DBD49"
+					type: "xp"
+					xp: 1
+				}
+				{
+					id: "13A7432DF12B44A7"
+					item: "minecraft:cake"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F6773BC770F5E4A"
+					table_id: 6383796220778907048L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "1E88C971BF4C416F"
+				type: "checkmark"
+			}]
+			title: "Welcome!"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65A0A91B61A39932"]
+			description: ["[ \"The earlygame is mainly the same as Vanilla until you get into \", { \"text\": \"Create\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6DD05086A29C3EFD\" } }, \",\" ]"]
+			disable_toast: true
+			id: "6DA70AE060A04426"
+			rewards: [
+				{
+					count: 2
+					id: "10E2B5A4F48F0063"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5D15103E4E44368F"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7375D3323049EC92"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: ["With FTB Ultimine you can mine a vein of adjacent blocks. To use Ultimine check your keybinds."]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1C0D0F6261635244"
+			optional: true
+			rewards: [{
+				id: "56CFC27516747121"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "122767252DC9EDC9"
+				title: "Ultimine"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["765A2F0B0F844701"]
+			description: [
+				"The questbook is available at the top left corner of the inventory screen but you can also collect it here if you really want to carry it around:D"
+				""
+				"Questlines unlock as you progress. "
+				""
+				"&6&lQuests serve as guidelines&r&r"
+				""
+				""
+				"&o&l&dQuest shape legend:&r&r&r"
+				""
+				"&e- Circle:&r normal quest"
+				"&e- Rounded square:&r questline entry quest, usually requires nothing and is usually auto-collected,"
+				"&e- Gear:&r Major task that gates a new questline in the same quest group. Can also mean the end of the questline."
+				"&r- Octagon:&r Major task that gates a new questline in a different quest group."
+			]
+			disable_toast: true
+			icon: "ftbquests:book"
+			id: "41E0304016C02D02"
+			optional: true
+			tasks: [{
+				id: "7CE7B92E3A80A3EB"
+				title: "Get Questbook"
+				type: "checkmark"
+			}]
+			title: "Quest Book"
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			description: ["Yung's mods revamped most of the Vanilla structures including Desert and Jungle temples, Mineshafts and Strongholds. "]
+			disable_toast: true
+			icon: "betterend:cave_grass"
+			id: "2143EF3EB756D9F6"
+			optional: true
+			rewards: [{
+				id: "1EEB1F0AE21B0C9D"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DB5C71863188972"
+				title: "Yung's mods"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["The Origins mod provides classes that you chose at the start of the game. You can always recheck what your class exactly is by collecting this quest."]
+			disable_toast: true
+			icon: "origins:orb_of_origin"
+			id: "2C409F7A592B2458"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/origin get @s origins:origin"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "210E7F9EF1A63716"
+				title: "Get Origin"
+				type: "command"
+			}]
+			tasks: [{
+				id: "503B7E438050D0E8"
+				title: "Origins"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: ["Collecting this quest will let you change your class once. &l&cDo not waste it!&r&r"]
+			disable_toast: true
+			icon: "origins:orb_of_origin"
+			id: "0E7C08B84DD065A6"
+			optional: true
+			rewards: [{
+				command: "/origin gui"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "1449456D8E072728"
+				title: "Change origin"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1C144944AF8FCCF0"
+				title: "Change origin (1x!)"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: ["You can open your map with M by default. Select areas with rightclicking to claim them. Claimed areas can be forceloaded(limited to 16 chunks by default)."]
+			disable_toast: true
+			icon: "minecraft:filled_map"
+			id: "19439E2819A87EA7"
+			optional: true
+			rewards: [{
+				id: "6BC576911D978514"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6634B6C2946D6CA4"
+				type: "checkmark"
+			}]
+			title: "Map"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"The quests act as a guideline, but may not show progression perfectly as they are WIP."
+				"There are so many different fluids and little items that the questbook won't show them all. Use REI."
+				"{@pagebreak}"
+				"The &o&4Progression&r&r tab showcases tiers of the most important items that you will use."
+				"It has completion toasts disabled so they won't pop up on your screen."
+				""
+				"{@pagebreak}"
+				""
+				"[ \"Please report any unreachable quests or other problems with quests on my \", { \"text\": \"Discord\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"67909F549A6603D5\" } }, \" server or on GitHub(not up yet)!\" ] "
+			]
+			disable_toast: true
+			icon: "ftbquests:book"
+			id: "765A2F0B0F844701"
+			optional: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6E13DCD11C7102B5"
+				type: "checkmark"
+			}]
+			title: "Quests"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			description: ["Discord server: &ohttps://discord.gg/vSYBqWdhsZ&r"]
+			disable_toast: true
+			icon: "minecraft:recovery_compass"
+			id: "67909F549A6603D5"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "713A69DCF6142825"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BABD8769A463D3B"
+				type: "checkmark"
+			}]
+			title: "Discord"
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			description: ["Seasons make biomes change in temperature. That affects plants. Check their tooltips to see how they are affected."]
+			disable_toast: true
+			icon: "seasonsextras:season_calendar"
+			id: "2A802A68DCD0484E"
+			optional: true
+			tasks: [{
+				id: "1024FDFE4A872C49"
+				type: "checkmark"
+			}]
+			title: "Seasons"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			disable_toast: true
+			icon: "ftbquests:book"
+			id: "5146FD162A529F48"
+			rewards: [{
+				auto: "enabled"
+				id: "3D95BF454B798297"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			title: "Questbook reward"
+			x: -10.5d
+			y: 2.0d
+		}
+	]
+	title: "Welcome to ModSupremum!"
+}

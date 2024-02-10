@@ -1,0 +1,219 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mk0__create"
+	group: "116B283BF65C2C2A"
+	icon: "create:wrench"
+	id: "5B4DD157C3DC8A9A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6DD05086A29C3EFD"]
+			id: "51B98B48F791D8A7"
+			tasks: [{
+				id: "7C7D0CF64F35107A"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6DD05086A29C3EFD"]
+			id: "0A00440F04DDA81F"
+			tasks: [{
+				id: "49483FF48F3605B3"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"51B98B48F791D8A7"
+				"0A00440F04DDA81F"
+			]
+			description: ["Create &6Brass dust&r by mixing &bZinc dust&r and &cCopper dust&r(both can be made in a &7Millstone&r and later by a &8Crushing wheel&r or &eMacerator&r)."]
+			id: "545EA1FD511B4B59"
+			tasks: [
+				{
+					id: "6AEB096374465558"
+					item: "kubejs:brass_dust"
+					type: "item"
+				}
+				{
+					id: "2505FB55DE0E5387"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DD05086A29C3EFD"]
+			description: ["&7Andesite alloy&r is an important component of almost all Create machine."]
+			id: "12DFFEE4FEAF3EC4"
+			tasks: [{
+				id: "4F5E9A67A8552B90"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12DFFEE4FEAF3EC4"]
+			id: "331BA6C5B91022A9"
+			tasks: [{
+				id: "2A63408E273EB28C"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65044796EC9C992E"]
+			id: "5D74F17F4504299F"
+			tasks: [
+				{
+					id: "69212A13024B2E14"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "0CBCC66B79651954"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "732E1E1372373636"
+					item: "create:gearbox"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["331BA6C5B91022A9"]
+			id: "65044796EC9C992E"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "4B92B2B5024F9F15"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12DFFEE4FEAF3EC4"]
+			id: "1823B74C0295FE75"
+			tasks: [{
+				id: "39CBB679D6614DA0"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"12DFFEE4FEAF3EC4"
+				"545EA1FD511B4B59"
+			]
+			description: [""]
+			id: "027A57E2934950C8"
+			tasks: [{
+				count: 2L
+				id: "52DA0CA6515E9D6E"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["12DFFEE4FEAF3EC4"]
+			id: "2FC0BE7752F0CD44"
+			tasks: [{
+				id: "49A7AA978C16E50B"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["65044796EC9C992E"]
+			id: "2B3ED3A8CFA1CC9D"
+			tasks: [{
+				id: "17B85DBFCEE5D765"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B3ED3A8CFA1CC9D"]
+			description: ["Craft a Forge hammer to get started on basic ore processing and industrialization!"]
+			icon: {
+				Count: 1b
+				id: "modern_industrialization:iron_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5686691354A0E1B7"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "06FF9E34868B1455"
+					item: {
+						Count: 1b
+						id: "modern_industrialization:iron_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E9C20954893D952"
+					item: "modern_industrialization:forge_hammer"
+					type: "item"
+				}
+			]
+			title: "Is this a Forge mod after all???"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: ["Create is a mod all about rotational force. If you check the ponders(W by default) of the items in this chapter you will get a feeling about how to use this mod."]
+			icon: "create:wrench"
+			id: "6DD05086A29C3EFD"
+			rewards: [{
+				id: "72298EC1407C43EF"
+				item: "create:wrench"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "165AF6E14D99C36F"
+				type: "checkmark"
+			}]
+			title: "Welcome to Create!"
+			x: -8.5d
+			y: 1.0d
+		}
+	]
+	title: "Create - Rotation on top!"
+}

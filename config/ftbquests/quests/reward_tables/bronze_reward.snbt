@@ -1,0 +1,10 @@
+{
+	id: "0B2A1D32BA6AAB2F"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 32, item: "modern_industrialization:bronze_ingot", random_bonus: 16 }
+		{ count: 48, item: "minecraft:iron_ingot", random_bonus: 16 }
+	]
+	title: "bronze_reward"
+}

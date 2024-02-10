@@ -1,0 +1,264 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "your_first_rocket"
+	group: "476A1B486AB519BC"
+	icon: {
+		Count: 1b
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "1472FC80CE7DEB6C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["66C58E99C272C5A9"]
+			description: [
+				"The NASA Workbench is used to craft rockets."
+				""
+				"The oxygen loader takes water, converts it to oxygen and fills it into your spacesuit."
+			]
+			icon: "ad_astra:nasa_workbench"
+			id: "79EF10C09AE81B56"
+			tasks: [
+				{
+					id: "4AA99C133A2FB2A6"
+					item: "ad_astra:nasa_workbench"
+					type: "item"
+				}
+				{
+					id: "4F965DE6EDFC93C6"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A0BC6A33A49C735"]
+			description: ["Ad Astra allows you to travel to space."]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "66C58E99C272C5A9"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "760A28FB17BB9392"
+				type: "checkmark"
+			}]
+			title: "To the stars!"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79EF10C09AE81B56"]
+			id: "08499EE0C673D64A"
+			tasks: [{
+				id: "7A9C0B41BCD4B23B"
+				item: "ad_astra_giselle_addon:fuel_loader"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79EF10C09AE81B56"]
+			description: ["Craft a spacesuit and a Tier 1 Rocket!"]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "0040E08670BC4E38"
+			tasks: [
+				{
+					id: "25B1E41F7C06F08A"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "748771E69F83A4C7"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6ADEE9DD07B6FEC0"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CA149FB8D9F52E5"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "579D4378007CC333"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0040E08670BC4E38"]
+			description: ["Travel to the Moon! You will get a Moon \"globe\" as a reward!"]
+			id: "2D19B2781F7EB035"
+			rewards: [{
+				id: "23BAE175834A86B5"
+				item: "ad_astra:moon_globe"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "06B2730DA5976936"
+				type: "dimension"
+			}]
+			title: "\"One small step for man...\""
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79EF10C09AE81B56"]
+			id: "4BA73A0FF1ADCC18"
+			tasks: [{
+				id: "2CAFF29D4EC86631"
+				item: "ad_astra_giselle_addon:automation_nasa_workbench"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "4D9D5C8CB68B6100"
+			tasks: [{
+				id: "63AD1A22E41499F7"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D9D5C8CB68B6100"]
+			id: "4A4ECCCFA55819F0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "24D3FBD81DC76692"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "71E353D5DAF2BB2F"
+			tasks: [{
+				id: "62F3DB9CA65AF464"
+				structure: "ad_astra:moon_dungeon"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "49C35B10D836BD0A"
+			tasks: [{
+				id: "4356E64639297B2A"
+				structure: "ad_astra:lunarian_village"
+				type: "structure"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "4EB47FEFA93DE695"
+			tasks: [{
+				id: "441C2B1C480974DD"
+				structure: "ad_astra:lunarian_village"
+				type: "structure"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "199009FF45F8544C"
+			tasks: [{
+				entity: "ad_astra:corrupted_lunarian"
+				id: "1036C92B6F4E7A57"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "35E5A17437A751F5"
+			tasks: [{
+				id: "1DFAC321C641A26C"
+				item: "ad_astra:cheese"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D19B2781F7EB035"]
+			id: "40BCC286860D16C0"
+			tasks: [{
+				id: "47D6040874BEEAD1"
+				item: "ad_astra:moon_stone"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+	]
+	title: "Your first rocket!"
+}

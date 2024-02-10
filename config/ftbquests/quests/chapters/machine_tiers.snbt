@@ -1,0 +1,624 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "machine_tiers"
+	group: "489D7A6ED77576DD"
+	icon: "ironchests:netherite_chest_upgrade"
+	id: "3A75E7A802C0CC3C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2771DB4E4880CF8D"]
+			id: "09ABFB396B38DC63"
+			tasks: [{
+				id: "5158F1E48E99CF9E"
+				item: "modern_industrialization:basic_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09ABFB396B38DC63"]
+			id: "536B889A0068747E"
+			tasks: [{
+				id: "7FE13635F88A406F"
+				item: "modern_industrialization:advanced_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["536B889A0068747E"]
+			id: "2B535A88FCA1220C"
+			tasks: [{
+				id: "0CF30FEEA41996DC"
+				item: "modern_industrialization:turbo_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B535A88FCA1220C"]
+			id: "1C8FD73CA748B4E9"
+			tasks: [{
+				id: "32FC8342ADE157FE"
+				item: "modern_industrialization:highly_advanced_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1C8FD73CA748B4E9"]
+			id: "7E3C7D33C7112134"
+			tasks: [{
+				id: "2E8C5C00A1031871"
+				item: "modern_industrialization:quantum_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Machine casings/hulls are the main building blocks of machines."
+				"Rightclicking a machine with a higher tier hull will upgrade its voltage."
+			]
+			id: "2771DB4E4880CF8D"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "1DBC6C3979534B7D"
+				item: "modern_industrialization:bronze_machine_casing"
+				type: "item"
+			}]
+			title: "Machine casings"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			id: "51E11AD7ACEC5AC4"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "508E2F1AF55CC926"
+				item: "modern_industrialization:analog_circuit"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["51E11AD7ACEC5AC4"]
+			id: "0BDCD911152FF282"
+			tasks: [{
+				id: "1F6C47E32E1252DD"
+				item: "modern_industrialization:electronic_circuit"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BDCD911152FF282"]
+			id: "3D3DBF634D0581B6"
+			tasks: [{
+				id: "58809C805A59FF3F"
+				item: "modern_industrialization:digital_circuit"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D3DBF634D0581B6"]
+			id: "656751EC58EC7D9E"
+			tasks: [{
+				id: "20C92570D3D5ACBC"
+				item: "modern_industrialization:quantum_circuit"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			id: "3E621DA40DACB39B"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "007FD3E1BCF51E2A"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E621DA40DACB39B"]
+			id: "303E92E77236E235"
+			tasks: [{
+				id: "331547507A1A5E47"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["303E92E77236E235"]
+			id: "3A4F849BAAC17A38"
+			tasks: [{
+				id: "0CAB694DCED0B979"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 2.0d
+		}
+		{
+			id: "2332F2339B1191BF"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "4D7767EF60F6F006"
+				item: "modern_industrialization:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2332F2339B1191BF"]
+			id: "232B8A459030A716"
+			tasks: [{
+				id: "35654C8BF699F004"
+				item: "modern_industrialization:mv_steam_turbine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["232B8A459030A716"]
+			id: "7CEA8995A9F0EECE"
+			tasks: [{
+				id: "1E6844E17F61AFFC"
+				item: "modern_industrialization:hv_steam_turbine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CEA8995A9F0EECE"]
+			id: "465D10AA241E46B0"
+			tasks: [{
+				id: "3F9F42BF75FAA286"
+				item: "modern_industrialization:large_steam_turbine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			id: "644403A8EB371894"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "343BDD36CBACED50"
+				item: "modern_industrialization:lv_diesel_generator"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["644403A8EB371894"]
+			id: "37F8C1916DFF5CBE"
+			tasks: [{
+				id: "3CFE2495B576F731"
+				item: "modern_industrialization:mv_diesel_generator"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37F8C1916DFF5CBE"]
+			id: "3429024274C1BBD5"
+			tasks: [{
+				id: "1A58E3A5329FFEE9"
+				item: "modern_industrialization:hv_diesel_generator"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3429024274C1BBD5"]
+			id: "5C996AD4D039A70F"
+			tasks: [{
+				id: "64B8250ADE5A1003"
+				item: "modern_industrialization:large_diesel_generator"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			description: ["The first way of running your machines is trough steam."]
+			icon: "modern_industrialization:bronze_boiler"
+			id: "1BE6EE5FF8702008"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [
+				{
+					id: "3017D7377E56B04D"
+					item: "modern_industrialization:bronze_boiler"
+					type: "item"
+				}
+				{
+					id: "0A11BAE4256C8A2F"
+					item: "modern_industrialization:steel_boiler"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1BE6EE5FF8702008"]
+			id: "3A61510B758A5CC8"
+			tasks: [{
+				id: "02877676FB1056F7"
+				item: "modern_industrialization:large_steam_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A61510B758A5CC8"]
+			id: "2ABAF99CDBAE1C7F"
+			tasks: [{
+				id: "48F52CCF89372E4C"
+				item: "modern_industrialization:advanced_large_steam_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2ABAF99CDBAE1C7F"]
+			id: "0743318C9B2B5BE4"
+			tasks: [{
+				id: "4F040078966DE0E1"
+				item: "modern_industrialization:high_pressure_large_steam_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0743318C9B2B5BE4"]
+			id: "3BF37A00CEE03CAF"
+			tasks: [{
+				id: "095D4CEDA703E6F4"
+				item: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			description: ["Upgrades overclock machines, making them accept higher EU/t values."]
+			id: "12F71A9F3A7F68EB"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "4501ABE1FEA9EAA5"
+				item: "modern_industrialization:steel_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["12F71A9F3A7F68EB"]
+			id: "74C3C88386C9AC9F"
+			tasks: [{
+				id: "2378DDEE1E7F2C9D"
+				item: "modern_industrialization:basic_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74C3C88386C9AC9F"]
+			id: "5314E2D1B5AA3E18"
+			tasks: [{
+				id: "43574B9F54973661"
+				item: "modern_industrialization:advanced_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5314E2D1B5AA3E18"]
+			id: "32DD3EB4F96BC260"
+			tasks: [{
+				id: "5DDBE180F607CABE"
+				item: "modern_industrialization:turbo_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32DD3EB4F96BC260"]
+			id: "5B020235DB2B45F5"
+			tasks: [{
+				id: "29CDC7283EA2E416"
+				item: "modern_industrialization:highly_advanced_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B020235DB2B45F5"]
+			id: "30466B0B7001DEF5"
+			tasks: [{
+				id: "7E137239E0CCD356"
+				item: "modern_industrialization:quantum_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			disable_toast: true
+			icon: "ad_astra:wrench"
+			id: "0150EC2D463BA870"
+			shape: "gear"
+			size: 4.0d
+			title: "Technology"
+			x: -11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"465D10AA241E46B0"
+				"5C996AD4D039A70F"
+				"3BF37A00CEE03CAF"
+			]
+			id: "5213182A5A2A4ABB"
+			tasks: [{
+				id: "18F4A665CA8E7503"
+				item: "modern_industrialization:nuclear_reactor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5213182A5A2A4ABB"]
+			id: "27B2AB2C950F5AF9"
+			tasks: [{
+				id: "54B0AAD65B8A91D0"
+				item: "modern_industrialization:fusion_reactor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "53C71E99A093E74B"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "3F59D9780CBC1662"
+				item: "modern_industrialization:copper_drill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "12929440989636D2"
+			tasks: [{
+				id: "24FF357A8DABBF70"
+				item: "modern_industrialization:bronze_drill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "25BDCCBE0532C2D5"
+			tasks: [{
+				id: "5F6F955F60853713"
+				item: "modern_industrialization:gold_drill"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "0696ECE97E734914"
+			tasks: [{
+				id: "55C9B45BACF4A9FF"
+				item: "modern_industrialization:aluminum_drill"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "65944DF0806CA1B4"
+			tasks: [{
+				id: "76ECE271436CFFE3"
+				item: "modern_industrialization:steel_drill"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "5F394AD358A0374E"
+			tasks: [{
+				id: "41DBC4C8534FEF34"
+				item: "modern_industrialization:stainless_steel_drill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["53C71E99A093E74B"]
+			id: "53A2C2568E8093D0"
+			tasks: [{
+				id: "314D00826180D56C"
+				item: "modern_industrialization:titanium_drill"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			description: ["Use REI to see what drills work in what machines and what they yield."]
+			disable_toast: true
+			icon: "modern_industrialization:copper_drill"
+			id: "1D05444037B757A1"
+			shape: "gear"
+			size: 4.0d
+			title: "Drills"
+			x: -8.0d
+			y: 10.5d
+		}
+		{
+			description: ["Energy(steam/electricity) is transferred by pipes/cables."]
+			id: "3412FFC132C6EA43"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "059DF328D3926017"
+				item: "modern_industrialization:fluid_pipe"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3412FFC132C6EA43"]
+			icon: "modern_industrialization:copper_cable"
+			id: "046AA6E75A6B65CA"
+			tasks: [
+				{
+					id: "4E14C7E2A3BE2AF2"
+					item: "modern_industrialization:copper_cable"
+					type: "item"
+				}
+				{
+					id: "23EBA247239BDC7E"
+					item: "modern_industrialization:tin_cable"
+					type: "item"
+				}
+				{
+					id: "1E398732EEE3796D"
+					item: "modern_industrialization:silver_cable"
+					type: "item"
+				}
+			]
+			title: "LV Cables"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["046AA6E75A6B65CA"]
+			icon: "modern_industrialization:electrum_cable"
+			id: "1084AC3E49DE6BDB"
+			tasks: [
+				{
+					id: "276E7B3F6E832E70"
+					item: "modern_industrialization:cupronickel_cable"
+					type: "item"
+				}
+				{
+					id: "245ABA59AE50FDD8"
+					item: "modern_industrialization:electrum_cable"
+					type: "item"
+				}
+			]
+			title: "MV Cables"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1084AC3E49DE6BDB"]
+			icon: "modern_industrialization:aluminum_cable"
+			id: "5D0BFDC5E9DE08A5"
+			tasks: [
+				{
+					id: "1FED4DDD7434158B"
+					item: "modern_industrialization:aluminum_cable"
+					type: "item"
+				}
+				{
+					id: "1C3C6E07F4BD0A60"
+					item: "modern_industrialization:kanthal_cable"
+					type: "item"
+				}
+			]
+			title: "HV Cables"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D0BFDC5E9DE08A5"]
+			icon: "modern_industrialization:platinum_cable"
+			id: "69C33E692D77A762"
+			tasks: [
+				{
+					id: "7DBA4C19473D05FD"
+					item: "modern_industrialization:annealed_copper_cable"
+					type: "item"
+				}
+				{
+					id: "307DCA9FB5CEAB00"
+					item: "modern_industrialization:platinum_cable"
+					type: "item"
+				}
+			]
+			title: "EV Cables"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["69C33E692D77A762"]
+			icon: "modern_industrialization:superconductor_cable"
+			id: "18E7E924FB48C934"
+			tasks: [{
+				id: "09EB0E0F4C9F0CF1"
+				item: "modern_industrialization:superconductor_cable"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+	]
+	subtitle: ["This questline shows progression in various parts of the pack."]
+	title: "Tech Progression"
+}

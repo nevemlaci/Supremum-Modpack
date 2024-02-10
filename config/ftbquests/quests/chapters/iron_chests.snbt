@@ -1,0 +1,103 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iron_chests"
+	group: "08721097C6A2BB58"
+	icon: "ironchests:iron_chest"
+	id: "4DC536010803E3BA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6DA70AE060A04426"]
+			id: "40D5B2100E8091A8"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "24C633120E7E8F0D"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D5B2100E8091A8"]
+			id: "7FE65CD576322A92"
+			tasks: [{
+				id: "637FE46FD40F906F"
+				item: "ironchests:copper_chest"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FE65CD576322A92"]
+			id: "10F7355BAC7DC6BC"
+			tasks: [{
+				id: "51C8BD4273B06777"
+				item: "ironchests:iron_chest"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10F7355BAC7DC6BC"]
+			id: "1AFBC1CFC60D0979"
+			tasks: [{
+				id: "5A7D56BA6B18D6BC"
+				item: "ironchests:gold_chest"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1AFBC1CFC60D0979"]
+			id: "5ACB9A83DB462FED"
+			tasks: [{
+				id: "5F6BBA60A40508A4"
+				item: "ironchests:diamond_chest"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ACB9A83DB462FED"]
+			id: "0BE1FB19B9CF3222"
+			tasks: [{
+				id: "21995A63875B8847"
+				item: "ironchests:netherite_chest"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ACB9A83DB462FED"]
+			id: "2F9B7A5363D599A0"
+			tasks: [{
+				id: "34C5E0E3CE031DEB"
+				item: "ironchests:obsidian_chest"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5ACB9A83DB462FED"]
+			id: "77584AEC346D4FFC"
+			tasks: [{
+				id: "5B5FA2BA9A3405A6"
+				item: "ironchests:crystal_chest"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+	title: "Iron Chests"
+}

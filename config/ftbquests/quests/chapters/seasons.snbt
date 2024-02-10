@@ -1,0 +1,232 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "seasons"
+	group: "489D7A6ED77576DD"
+	icon: "minecraft:grass_block"
+	id: "743ACE3EB1296C10"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2E50313910153DEA"]
+			id: "7B9FCA2FEB76EF41"
+			tasks: [{
+				id: "7D744302D83F57EE"
+				structure: "#betterstrongholds:better_strongholds"
+				title: "Stronghold"
+				type: "structure"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B9FCA2FEB76EF41"]
+			id: "16BD1ECB09C8218B"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:ender_eye"
+				id: "6C21A42BE29D51B4"
+				title: "The End?"
+				type: "dimension"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16BD1ECB09C8218B"]
+			id: "62A8972A4640A28F"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "4FF4A571FBBC085C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The End"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			id: "2E50313910153DEA"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "7E1C25EC5B274806"
+				title: "The Nether"
+				type: "dimension"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02D82631DB708FBE"]
+			id: "1F08DD5703655D0C"
+			tasks: [{
+				count: 3L
+				id: "4A5062F6DE30E43F"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1F08DD5703655D0C"]
+			id: "4D60B8108EF3CEA6"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "2468AF1535461FAE"
+				type: "kill"
+				value: 100L
+			}]
+			title: "The Wither"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E50313910153DEA"]
+			id: "02D82631DB708FBE"
+			tasks: [{
+				id: "70A0676BF604C67F"
+				structure: "#betterfortresses:better_fortresses"
+				title: "Nether Fortress"
+				type: "structure"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["62A8972A4640A28F"]
+			icon: {
+				Count: 1b
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6F99B82980F73891"
+			tasks: [
+				{
+					id: "5BA333831FF46758"
+					structure: "minecraft:end_city"
+					type: "structure"
+				}
+				{
+					id: "1E0C167A2C45C3C1"
+					item: {
+						Count: 1b
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "End cities"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6F99B82980F73891"]
+			id: "579B381FDD5C9A02"
+			tasks: [{
+				id: "0CA26B5E704F8CA0"
+				item: "betterend:infusion_pedestal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["579B381FDD5C9A02"]
+			id: "1552E909EB8ED8C5"
+			shape: "gear"
+			tasks: [{
+				id: "07967286A5369C86"
+				item: {
+					Count: 1b
+					id: "betterend:elytra_crystalite"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1778BF572063C117"
+			shape: "gear"
+			size: 4.0d
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			icon: "minecraft:cobblestone"
+			id: "7DC8F9DD83189745"
+			shape: "gear"
+			size: 4.0d
+			title: "Processing basic materials"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31469EA759215DA5"]
+			id: "3FFF28E32DDFFCE8"
+			tasks: [{
+				id: "1E6C3010ABD9F42E"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3FFF28E32DDFFCE8"]
+			description: ["You can make &7gravel&r by milling/macerating &8cobblestone&r."]
+			id: "50338986E7C904B3"
+			tasks: [{
+				id: "4C27A1652DF43E47"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50338986E7C904B3"]
+			description: ["You can make &esand&r by milling/macerating &7gravel&r."]
+			id: "2EBC7091146AF0A1"
+			tasks: [{
+				id: "2A0438CA4D6438E9"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			description: ["[ \"Mine stone blocks with silk touch to get stone. You get that fairly early with the \", { \"text\": \"Steam mining drill\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7889A83F84E4B0D8\" } }, \".\" ]"]
+			id: "31469EA759215DA5"
+			tasks: [{
+				id: "304ED2EA4365D29C"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+	]
+	title: "Vanilla Progression"
+}

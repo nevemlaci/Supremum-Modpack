@@ -1,0 +1,11 @@
+{
+	id: "5897CCD70A0205A8"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 4, item: "minecraft:potato" }
+		{ count: 8, item: "minecraft:carrot" }
+		{ count: 16, item: "minecraft:beetroot_seeds" }
+	]
+	title: "intro reward "
+}

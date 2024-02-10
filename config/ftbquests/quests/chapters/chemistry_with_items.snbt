@@ -1,0 +1,73 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chemistry_with_items"
+	group: "6CBEC6EE77FD4971"
+	icon: {
+		Count: 1b
+		id: "itemalchemy:philosopher_stone"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "56D73C8AC5ABE9F4"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5374764668EE1CEC"
+				"6C5F50473DE2095D"
+				"1552E909EB8ED8C5"
+			]
+			description: [
+				"This questline requires to complete basically all code mods + the vanilla game in this modpacks. If you've done that, proceed."
+				""
+				"{@pagebreak}"
+				"Mods needed to be (almost) completed:"
+				"-Vanilla Minecraft(Kill the Wither and the Ender Dragon)."
+				"-Modern Industrialization"
+				"-Ad Astra"
+				"-Applied Energestics 2"
+				"-BetterEnd"
+			]
+			hide: true
+			id: "28FE28ECBC02547B"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "7E68B596165F2B4C"
+				item: {
+					Count: 1b
+					id: "itemalchemy:philosopher_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28FE28ECBC02547B"]
+			description: [
+				"The alchemy table can convert material into EMC and back, making it a universal conversion tool from one material to another."
+				""
+				""
+				"&oPlease note, that some items do not have an EMC value by default. The modpack in always WIP, and items might get EMC values with new updates.&r"
+			]
+			id: "6E46062FA1C383E1"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0E1F202FFAC8FD0E"
+				item: "itemalchemy:alchemy_table"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Chemistry with items"
+}

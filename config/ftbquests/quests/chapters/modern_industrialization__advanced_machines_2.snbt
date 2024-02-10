@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__advanced_machines_2"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:mixed_ingot_blastproof"
+	id: "28F6E9CF0CFA0423"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D8711C7E1AD05CD"]
+			disable_toast: true
+			hide: true
+			icon: "modern_industrialization:basic_upgrade"
+			id: "56E73D95CB687E2D"
+			invisible: true
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "035E9A41462BCD90"
+				type: "checkmark"
+			}]
+			title: "Getting Advanced"
+			x: -8.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56E73D95CB687E2D"]
+			description: [
+				"You probably needed some of these already."
+				"You can also rightclick your machines with higher tier Machine Hulls to make them accept higher voltage cables."
+			]
+			id: "5A4A17C5635D9F27"
+			tasks: [{
+				id: "044D2AB56B470AAA"
+				item: "modern_industrialization:advanced_machine_hull"
+				type: "item"
+			}]
+			title: "Upgrading machines"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62DCB74F90C0783F"]
+			description: ["Needed for better machine hulls and &dMixed Blastproof Ingot&r"]
+			id: "622B71D7121674A9"
+			tasks: [{
+				id: "7C268B0CE4B27B70"
+				item: "modern_industrialization:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A0BC6A33A49C735"]
+			description: ["The Vacuum Freezer can cool down some metals that can only be made in their hot form at first."]
+			id: "62DCB74F90C0783F"
+			tasks: [{
+				id: "7E9270A6D422BF89"
+				item: "modern_industrialization:vacuum_freezer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73BE6EA9FAF48F8C"]
+			description: ["Titanium is used in a lot of endgame recipes. Use the &o&9blast furnace&r&r to obtain hot titanium and cool it down in the &o&bvacuum freezer&r&r."]
+			id: "6F6984205F488911"
+			tasks: [{
+				id: "0C1664D38C566F51"
+				item: "modern_industrialization:titanium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["622B71D7121674A9"]
+			id: "19061BA14DBE2FEF"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "691FB7E8CF80515F"
+				item: "modern_industrialization:turbo_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6F6984205F488911"
+				"19061BA14DBE2FEF"
+			]
+			id: "2491E417287917EE"
+			tasks: [{
+				id: "10A09175B437EF0E"
+				item: "modern_industrialization:pressurizer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2491E417287917EE"]
+			description: ["High pressure water can be vaporized in here to produce electricity."]
+			id: "2E76224317760585"
+			tasks: [{
+				id: "16AC05F6F6D65DEF"
+				item: "modern_industrialization:high_pressure_large_steam_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2E76224317760585"]
+			id: "212C0E90A0992583"
+			tasks: [{
+				id: "4BD095789F3133F4"
+				item: "modern_industrialization:large_steam_turbine"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E76224317760585"]
+			id: "6D7786A8BF6B90B5"
+			tasks: [{
+				id: "515A9E9220B98E1C"
+				item: "modern_industrialization:heat_exchanger"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19061BA14DBE2FEF"]
+			id: "48FD513D75D16DE3"
+			tasks: [{
+				id: "63B60BA49609E5A2"
+				item: "modern_industrialization:hv_steam_turbine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62DCB74F90C0783F"]
+			description: ["If you haven't upgraded your Electric Blast Furnace somehow this is the time to do so."]
+			id: "73BE6EA9FAF48F8C"
+			tasks: [{
+				count: 16L
+				id: "06A9F4EAB181D01B"
+				item: "modern_industrialization:kanthal_coil"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F6984205F488911"]
+			description: ["A multiblock Diesel generator."]
+			id: "749850F30ED171F2"
+			tasks: [{
+				id: "0C42BAE03A40F209"
+				item: "modern_industrialization:large_diesel_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["622B71D7121674A9"]
+			description: ["&lCheck REI for the options and use the MI wrench to see the structure outlines!&r"]
+			id: "576D69E52EEA37B3"
+			tasks: [{
+				id: "79666799D7F09600"
+				item: "modern_industrialization:distillation_tower"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6F6984205F488911"
+				"2491E417287917EE"
+				"41A7A57659C10D6F"
+			]
+			id: "278F48501D023B1E"
+			tasks: [{
+				id: "653620ACB447A025"
+				item: "modern_industrialization:mixed_ingot_blastproof"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["278F48501D023B1E"]
+			description: [""]
+			icon: "modern_industrialization:implosion_compressor"
+			id: "695CE42A676412B4"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oCompleting this unlocks the Nuclear Reactor questline of MI&r"
+			tasks: [
+				{
+					id: "4850A126BAED349A"
+					item: "modern_industrialization:implosion_compressor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2DACEB869E9EDA35"
+					item: "modern_industrialization:blastproof_casing"
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "153A57DC7276F5B1"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56E73D95CB687E2D"]
+			hide_dependency_lines: true
+			id: "41A7A57659C10D6F"
+			tasks: [{
+				id: "50DFBBA25FC9EC0D"
+				item: "modern_industrialization:tungsten_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56E73D95CB687E2D"]
+			icon: "modern_industrialization:processing_unit"
+			id: "2A0BC6A33A49C735"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "782E5456FDFFED5A"
+					item: "modern_industrialization:random_access_memory"
+					type: "item"
+				}
+				{
+					id: "01F7957771654B84"
+					item: "modern_industrialization:arithmetic_logic_unit"
+					type: "item"
+				}
+				{
+					id: "5D5364897383FEE7"
+					item: "modern_industrialization:memory_management_unit"
+					type: "item"
+				}
+				{
+					id: "5E62BB62C4C52759"
+					item: "modern_industrialization:processing_unit_board"
+					type: "item"
+				}
+				{
+					id: "1F45997C1134F966"
+					item: "modern_industrialization:digital_circuit"
+					type: "item"
+				}
+				{
+					id: "51F01FF01330AE80"
+					item: "modern_industrialization:processing_unit"
+					type: "item"
+				}
+			]
+			title: "CPU"
+			x: -5.85d
+			y: 0.0d
+		}
+	]
+	title: "Modern Industrialization - Advanced Machines"
+}

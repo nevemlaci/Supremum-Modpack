@@ -1,0 +1,109 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hunting_for_calorite"
+	group: "476A1B486AB519BC"
+	icon: "ad_astra:raw_calorite_block"
+	id: "655EB7D0A6E57564"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4EF1CAAB4E672739"]
+			icon: "ad_astra:space_painting"
+			id: "23A3DDC08BCDA916"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "6CD683428E6D25CD"
+				type: "checkmark"
+			}]
+			title: "AdAstra Endgame"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23A3DDC08BCDA916"]
+			icon: "ad_astra:venus_globe"
+			id: "27634AD67972F487"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				id: "343F1DABA06E223A"
+				type: "dimension"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["23A3DDC08BCDA916"]
+			icon: "ad_astra:mercury_globe"
+			id: "4312B3E25DAC072A"
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "2F4D7AF24932733D"
+				type: "dimension"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"27634AD67972F487"
+				"4312B3E25DAC072A"
+			]
+			id: "0F229A6690E7B459"
+			tasks: [{
+				id: "21095F2902F505B0"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F229A6690E7B459"]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "5274D56D932423F3"
+			shape: "circle"
+			tasks: [{
+				id: "16F5B2090FE19267"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5274D56D932423F3"]
+			description: ["You'll need 1 Glacio Stone for the ProjectE Table."]
+			icon: "ad_astra:glacio_globe"
+			id: "6C5F50473DE2095D"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "ad_astra:glacio"
+					id: "4A5023606222C9CD"
+					type: "dimension"
+				}
+				{
+					id: "52F83F65685A5CCE"
+					item: "ad_astra:glacio_stone"
+					type: "item"
+				}
+			]
+			title: "Glacio"
+			x: 3.5d
+			y: 0.0d
+		}
+	]
+	title: "Hunting for Calorite"
+}

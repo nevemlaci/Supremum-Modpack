@@ -1,0 +1,157 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energestics_2__storage"
+	group: "08721097C6A2BB58"
+	icon: {
+		Count: 1b
+		id: "ae2:item_storage_cell_64k"
+		tag: { }
+	}
+	id: "03094A7150F6EAE9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D5DDFF5F096ED74"]
+			description: [
+				"Make an ME controller and an Energy Acceptor to start off with AE2."
+				""
+				"{@pagebreak}"
+				"&4Note: AE2 silicon was replaced by Modern Industrialization Silicon Plates &oSorry&r&r"
+				""
+				"{@pagebreak}"
+				"The questbook won't go into detail on AE2, as it's almost the same with a few changes(Inscriber removed, Silicon swapped to MI Silicon plates)."
+			]
+			hide: true
+			icon: "ae2:controller"
+			id: "64BD632D816636C6"
+			rewards: [{
+				id: "75E49D7D0F237EDE"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "0B317D96F23A43B0"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "70CDE624E33DB7BD"
+					item: "ae2:controller"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "The network"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64BD632D816636C6"]
+			description: [
+				"Using cables and a Terminal allows you to access your network."
+				""
+				"&oIf the terminal isn't working you probably palced it backwards. See the AE2 Guide(hold G on the item) for more.&r"
+			]
+			icon: "ae2:crafting_terminal"
+			id: "7C3020BFBFF10B55"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "75139F08302B2C7D"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "227FBC93C85F025E"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64BD632D816636C6"]
+			description: ["A Disk Drive can hold storage cells. Storage cells can store items. Keep in mind that the Disk Drive needs a terminal in the network as that is the only way it can be accessed."]
+			icon: "ae2:drive"
+			id: "19FBC9A7361E7ABA"
+			tasks: [
+				{
+					id: "13D26E8FFC76624C"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1763BF253616FA4C"
+					item: "ae2:drive"
+					type: "item"
+				}
+			]
+			title: "Storage"
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64BD632D816636C6"]
+			description: ["Storage cells come in different sizes. Here are all of them, you might want to automate processors before you start crafting larger ones."]
+			icon: {
+				Count: 1b
+				id: "ae2:item_storage_cell_64k"
+				tag: { }
+			}
+			id: "661DEF815F491907"
+			tasks: [
+				{
+					id: "613D6BC938865D5C"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_4k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "636D2C1AF101E078"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_16k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2AA79691B105C1E8"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_64k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "50CB989F24243432"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_256k"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Bigger storage cells"
+			x: -8.5d
+			y: 0.0d
+		}
+	]
+	title: "AE2 - Storage"
+}

@@ -1,0 +1,185 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mars"
+	group: "476A1B486AB519BC"
+	icon: "ad_astra:mars_globe"
+	id: "59ED1F73A1632CDA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A4ECCCFA55819F0"]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_2_rocket"
+				tag: { }
+			}
+			id: "70025569D4058CF4"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "50BA0BFAEB9A8E33"
+				type: "checkmark"
+			}]
+			title: "Mars"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70025569D4058CF4"]
+			id: "0683C4ADB44FAD24"
+			tasks: [{
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_globe"
+				id: "7C44E3E82015F93B"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0683C4ADB44FAD24"]
+			id: "38080AE35A94930F"
+			tasks: [{
+				id: "502D09D5B10F918A"
+				item: "ad_astra:mars_sand"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0683C4ADB44FAD24"]
+			id: "4E88D1B4FB38A088"
+			tasks: [{
+				id: "52F498D1B1E4B769"
+				structure: "ad_astra:mars_temple"
+				type: "structure"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0683C4ADB44FAD24"]
+			id: "6AA66A2C2CE06198"
+			tasks: [{
+				entity: "ad_astra:martian_raptor"
+				id: "334ABEB74B70E19E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0683C4ADB44FAD24"]
+			id: "32B7C0DCAAF6C683"
+			tasks: [{
+				id: "29856264F4DEB660"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32B7C0DCAAF6C683"]
+			description: ["Cryofuel is an alternative fuel for your rockets."]
+			id: "1922D01001855653"
+			tasks: [
+				{
+					id: "65A1BDA6C378161C"
+					item: "ad_astra:cryo_freezer"
+					type: "item"
+				}
+				{
+					id: "08930DF006A485A7"
+					item: "ad_astra:cryo_fuel_bucket"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32B7C0DCAAF6C683"]
+			description: ["You'll need a netherite space suit to protect you from harsher environments on your astrojourney."]
+			icon: {
+				Count: 1b
+				id: "create:netherite_diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5F63A34FB6B5750E"
+			tasks: [
+				{
+					id: "76BC679D2CA8295B"
+					item: {
+						Count: 1b
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CA53A04ECE825B5"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43C4A923FEE871A5"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C72979169B2089C"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F63A34FB6B5750E"]
+			id: "4EF1CAAB4E672739"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "730144D06C34DB08"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Mars"
+}

@@ -1,0 +1,211 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__2"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:coke_oven"
+	id: "0BC7B70F8EE31EA5"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4200403346A07174"]
+			description: ["The coke oven can be used to obtain well... coke."]
+			icon: "modern_industrialization:coke_oven"
+			id: "3DB030D284E13409"
+			rewards: [{
+				count: 8
+				id: "56711CAEE1DC7D56"
+				item: "modern_industrialization:coke"
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E0E1A7BFC9F020A"
+					item: "modern_industrialization:coke_oven"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "39FED145CFF40D67"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "40EBD72A9B37EC36"
+					item: "modern_industrialization:bronze_fluid_input_hatch"
+					type: "item"
+				}
+				{
+					id: "505AD060B4D5EDB0"
+					item: "modern_industrialization:bronze_item_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7F11C2852467BE02"
+					item: "modern_industrialization:bronze_item_output_hatch"
+					type: "item"
+				}
+				{
+					id: "2FBAFD3886DA3479"
+					item: "modern_industrialization:coke"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DB030D284E13409"]
+			description: ["You'll use the blast furnace to create &fsteel&r."]
+			icon: "modern_industrialization:steam_blast_furnace"
+			id: "0941CAE11AE09904"
+			rewards: [{
+				count: 32
+				id: "7C7EABA56EE4609C"
+				item: "minecraft:iron_ingot"
+				random_bonus: 64
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "244C3A2A088C217C"
+					item: "modern_industrialization:steam_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "17303634E18976D2"
+					item: "modern_industrialization:fire_clay_bricks"
+					type: "item"
+				}
+				{
+					id: "11A09AA191A29645"
+					item: "modern_industrialization:bronze_fluid_input_hatch"
+					type: "item"
+				}
+				{
+					id: "587F5B8BE4FECD79"
+					item: "modern_industrialization:bronze_item_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7A6ACD1855F92FAC"
+					item: "modern_industrialization:bronze_item_output_hatch"
+					type: "item"
+				}
+				{
+					id: "3FD526E894B3F9F3"
+					item: "modern_industrialization:bronze_fluid_output_hatch"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0941CAE11AE09904"]
+			id: "7293EB35E8DBCE20"
+			rewards: [{
+				count: 8
+				id: "413AE21FD4303D58"
+				item: "modern_industrialization:steel_ingot"
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "56F5959A66380C98"
+				item: "modern_industrialization:steel_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7293EB35E8DBCE20"]
+			description: ["You can upgrade your machines from &o&6bronze&r&r tier to &o&0steel&r&r tier."]
+			id: "46CF8D6405F9A7F2"
+			rewards: [{
+				id: "2327078163E94D4B"
+				item: "modern_industrialization:steel_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BF1B31BD1C76325"
+				item: "modern_industrialization:steel_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7293EB35E8DBCE20"]
+			description: [
+				"The steam quarry is a multiblock machine that produces minerals based on the drill inside it."
+				""
+				"This is a very important machine and it might be worth to build multiple quarries to produce enough resources."
+			]
+			icon: "modern_industrialization:steam_quarry"
+			id: "1B4064D2DCEA1E11"
+			rewards: [{
+				count: 64
+				id: "4C89E525521855F1"
+				item: "minecraft:cobblestone"
+				random_bonus: 64
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2AA84AF0E34513A3"
+					item: "modern_industrialization:steam_quarry"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D868A62FF3F20DF"
+					item: "minecraft:chain"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1D577D18628E5E5B"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "15DF19DF0160E3F7"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					id: "25C962F43BE69ED3"
+					item: "modern_industrialization:bronze_drill"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13AA96E9136A9483"]
+			disable_toast: true
+			hide: true
+			icon: "modern_industrialization:wrench"
+			id: "4200403346A07174"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "7FD03B15210EB4B2"
+				type: "checkmark"
+			}]
+			title: "Starting to industrialize"
+			x: -7.15d
+			y: 0.0d
+		}
+	]
+	title: "Modern Industrialization - Multiblock madness"
+}

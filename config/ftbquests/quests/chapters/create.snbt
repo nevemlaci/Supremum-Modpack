@@ -1,0 +1,94 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "2585B8801D6154A7"
+	icon: "create:brass_encased_large_cogwheel"
+	id: "7DF3AFF507AE81F3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65044796EC9C992E"]
+			hide: true
+			icon: "create:mechanical_mixer"
+			id: "39AFA631C80D4BD6"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "63279EDC3E295101"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+				{
+					id: "10F9F14EADFF76E9"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "45584A2F366883C2"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "0B5C8CA88D36AEA4"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "60DFCF8FD699E90C"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "001851D9D8CA5141"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "5FD6D10862FC8338"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			title: "Mechanical devices"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65044796EC9C992E"]
+			hide: true
+			icon: "create:track"
+			id: "6AFDBCA10EDFA5A4"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "2F45715FB1B40CAF"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "1FA42DDAD582B6D4"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "192A62C45A9ECB73"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "00ACAA93ECC8E36D"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "Trains"
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+	title: "Create"
+}

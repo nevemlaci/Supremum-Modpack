@@ -1,0 +1,11 @@
+{
+	chapter_groups: [
+		{ id: "6E7C085B9B79161B", title: "Intro" }
+		{ id: "489D7A6ED77576DD", title: "Progression" }
+		{ id: "116B283BF65C2C2A", title: "Technology \\& Industry" }
+		{ id: "476A1B486AB519BC", title: "Space Exploration" }
+		{ id: "6CBEC6EE77FD4971", title: "ItemAlchemy (ProjectE)" }
+		{ id: "08721097C6A2BB58", title: "Storage" }
+		{ id: "2585B8801D6154A7", title: "Automation" }
+	]
+}

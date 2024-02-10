@@ -1,0 +1,340 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modern_industrialization__electricity"
+	group: "116B283BF65C2C2A"
+	icon: "modern_industrialization:copper_wire"
+	id: "5FFA0CB297CE5F19"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["69B1F785AF68CE77"]
+			description: [
+				"To get Synthetic oil:"
+				"- Mix water with carbon in a Mixer to make Raw synthetic oil"
+				"- Burn raw synthetic oil to make Synthetic oil"
+			]
+			icon: "modern_industrialization:rubber_sheet"
+			id: "53BDAB780EC7E46A"
+			rewards: [{
+				count: 4
+				id: "6B63B4EA0B936922"
+				item: "modern_industrialization:rubber_sheet"
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30E8EAD19082D7AC"
+					item: "modern_industrialization:synthetic_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "01181536918E2671"
+					item: "modern_industrialization:rubber_sheet"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53BDAB780EC7E46A"]
+			description: ["The wiremill is used to cut metals into very thin wires."]
+			id: "2E8F767D4A46F0A7"
+			rewards: [{
+				count: 8
+				id: "38804291A2F8317D"
+				item: "modern_industrialization:copper_plate"
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BF18DDB61EB5AC8"
+				item: "modern_industrialization:steel_wiremill"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["69B1F785AF68CE77"]
+			description: [
+				"Use the block's GUI and the MI Wrench to see the structure outlines."
+				""
+				"&4Do not break the controller block as it voids all the fluids stored in the tank!&r"
+			]
+			hide_dependency_lines: true
+			id: "0810B73151B642E6"
+			tasks: [{
+				id: "0FBB6FC500CA0C68"
+				item: "modern_industrialization:large_tank"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61CE6FEB34A1EBE9"]
+			description: ["A better, multiblock version of the one-block boilers."]
+			icon: "modern_industrialization:large_steam_boiler"
+			id: "356099C9744074F9"
+			tasks: [
+				{
+					id: "60503CCE762B30B9"
+					item: "modern_industrialization:large_steam_boiler"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "109CB6851C8587B4"
+					item: "modern_industrialization:bronze_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "09BE1F08CD85F664"
+					item: "modern_industrialization:bronze_plated_bricks"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "11B3F991F71A2E8A"
+					item: "modern_industrialization:heatproof_machine_casing"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B4064D2DCEA1E11"]
+			disable_toast: true
+			hide: true
+			icon: "modern_industrialization:lv_steam_turbine"
+			id: "69B1F785AF68CE77"
+			invisible: true
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "68D92784D804FE32"
+				type: "checkmark"
+			}]
+			title: "Electricity!"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["61CE6FEB34A1EBE9"]
+			description: ["The LV steam turbine produces electricity from steam."]
+			id: "7874F3F54910A267"
+			tasks: [{
+				id: "2FF07ECE118A8558"
+				item: "modern_industrialization:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7874F3F54910A267"]
+			description: ["The electric motor can be used to turn electricity into rotational force. Alternators do not work with Modern Industrialization energy at all(You cannot convert rotational force to EU)"]
+			id: "611AC89D60DA334A"
+			tasks: [{
+				id: "5F028721FD6EC4E2"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2E8F767D4A46F0A7"]
+			description: ["A fancy chest that has some configurations."]
+			id: "747AD608EB56C91D"
+			tasks: [{
+				id: "22CDE3544C79BB2F"
+				item: "modern_industrialization:configurable_chest"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E4553A232C2A6A9"]
+			description: ["Allows you to automatize some recipes. Also replaces the Inscriber from AE2."]
+			id: "6CE480883BF7092E"
+			tasks: [{
+				id: "3057654022AFF896"
+				item: "modern_industrialization:assembler"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7874F3F54910A267"]
+			description: ["The Polarizer can be used to magnetize items."]
+			id: "5E4553A232C2A6A9"
+			tasks: [{
+				id: "29CA83B49DEC971A"
+				item: "modern_industrialization:polarizer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5E4553A232C2A6A9"]
+			description: [
+				"An electric version of the Blast Furnace. Needed for advanced recipes."
+				""
+				"Can be upgraded by Kanthal coils."
+			]
+			icon: "modern_industrialization:electric_blast_furnace"
+			id: "3A0E1518EF915D65"
+			tasks: [
+				{
+					id: "6C0A326E7B97BAE4"
+					item: "modern_industrialization:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "106FC4751FC17D84"
+					item: "modern_industrialization:cupronickel_coil"
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "52F7600B4A4E41B8"
+					item: "modern_industrialization:heatproof_machine_casing"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A0E1518EF915D65"]
+			description: ["Aluminium and Silicon are core components of almost all electric machines. Also opens the way towards HV."]
+			icon: "modern_industrialization:aluminum_ingot"
+			id: "4080F67038142AF0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "369B02A9249BB46C"
+					item: "modern_industrialization:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "0718B5BA48D2CE6E"
+					item: "modern_industrialization:silicon_ingot"
+					type: "item"
+				}
+			]
+			title: "Is it Aluminum or Aluminium? I don't know..."
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E8F767D4A46F0A7"]
+			description: ["Craft an Analog circuit board."]
+			icon: "modern_industrialization:analog_circuit"
+			id: "61CE6FEB34A1EBE9"
+			rewards: [{
+				id: "46D5B81839B5CB1F"
+				item: "modern_industrialization:analog_circuit"
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D9474E0D656A854"
+					item: "modern_industrialization:resistor"
+					type: "item"
+				}
+				{
+					id: "5D2E7AD1FEEF4BEB"
+					item: "modern_industrialization:inductor"
+					type: "item"
+				}
+				{
+					id: "267EE8359578325F"
+					item: "modern_industrialization:capacitor"
+					type: "item"
+				}
+				{
+					id: "6D5F843EB1D116E8"
+					item: "modern_industrialization:analog_circuit"
+					type: "item"
+				}
+			]
+			title: "RLC"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E8F767D4A46F0A7"]
+			icon: "modern_industrialization:copper_cable"
+			id: "65E724D69C081CE0"
+			tasks: [{
+				id: "7DBA6368745DC1FA"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "fabric:lv_cables"
+					}
+				}
+				title: "Any #fabric:lv_cables"
+				type: "item"
+			}]
+			title: "LV Cables"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65E724D69C081CE0"]
+			id: "4018B56C0459778C"
+			tasks: [{
+				id: "3582BECCC7189912"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "fabric:mv_cables"
+					}
+				}
+				title: "Any #fabric:mv_cables"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4018B56C0459778C"]
+			description: ["Your way of converting LV to MV and vice versa."]
+			id: "450F7F7BF54A5E85"
+			tasks: [
+				{
+					id: "232FAC3B1512F076"
+					item: "modern_industrialization:lv_mv_transformer"
+					type: "item"
+				}
+				{
+					id: "3882AD0FEB115174"
+					item: "modern_industrialization:mv_lv_transformer"
+					type: "item"
+				}
+			]
+			title: "Transformators"
+			x: 8.5d
+			y: 2.5d
+		}
+	]
+	title: "Modern Industrialization - Electricity"
+}
