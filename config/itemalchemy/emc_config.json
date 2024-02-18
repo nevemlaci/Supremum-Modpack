@@ -3187,5 +3187,8 @@
   "betternether:wart_chest_boat": 64,
   "betternether:anchor_tree_chest_boat": 64,
   "betternether:willow_chest_boat": 64,
-  "betternether:rubeus_chest_boat": 64
+  "betternether:rubeus_chest_boat": 64,
+  "movingelevators:display_block": 1665,
+  "movingelevators:elevator_block": 2338,
+  "movingelevators:button_block": 2880
 }
